@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test-method Suite" parallel="tests" thread-count="4">
+	<parameter name="parallel" value="NO"></parameter>
+
+	<test name="NV">
+
+			<parameter name="browser" value="chrome"></parameter>
+
+			<parameter name="ip" value="http://localhost:5566/wd/hub"></parameter>
+			<parameter name="url" value="https://ambest-sap-stg.nationalvision.com/"></parameter>
+		<classes>
+ 			<class name="com.nv.scripts.homepage.HomePageValidation" />
+ 			<class name="com.nv.scripts.homepage.ValidateCheckOut" />
+			
+
+		</classes>
+	
+	</test>
+</suite>
+
+

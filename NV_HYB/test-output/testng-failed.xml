@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Failed suite [Test-method Suite]" parallel="tests">
+  <parameter name="parallel" value="NO"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="ip" value="http://localhost:5566/wd/hub"/>
+  <parameter name="url" value="https://ambest-sap-stg.nationalvision.com/"/>
+  <test name="NV(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="ip" value="http://localhost:5566/wd/hub"/>
+    <parameter name="url" value="https://ambest-sap-stg.nationalvision.com/"/>
+    <classes>
+      <class name="com.nv.scripts.homepage.HomePageValidation">
+        <methods>
+          <include name="tearDownFirefox"/>
+          <include name="first1"/>
+          <include name="firstBeforeClass"/>
+          <include name="first"/>
+          <include name="tearDown"/>
+          <include name="close"/>
+          <include name="excelLoad"/>
+          <include name="nv_SignUpValidation"/>
+          <include name="suiteFirst"/>
+        </methods>
+      </class> <!-- com.nv.scripts.homepage.HomePageValidation -->
+      <class name="com.nv.scripts.homepage.ValidateCheckOut">
+        <methods>
+          <include name="checkOutValidation"/>
+          <include name="tearDown"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.nv.scripts.homepage.ValidateCheckOut -->
+    </classes>
+  </test> <!-- NV(failed) -->
+</suite> <!-- Failed suite [Test-method Suite] -->
