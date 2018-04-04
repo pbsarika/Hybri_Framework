@@ -55,9 +55,9 @@ public class SendMail extends HtmlReportSupport {
 										"\\", "") + ".Zip";
 		Zip.zipFolder("Results/HTML/Screenshots/", strZipFilePath);
 		Zip.zipFolder("C:\\Users\\ctl-user\\Desktop\\Jun17Workspace\\FKartProject\\Results\\HTML22_Jun_2015_06_17_12_916", "C:\\Users\\ctl-user\\Desktop\\Jun17Workspace\\FKartProject\\Results\\HTML22_Jun_2015_06_17_12_916.zip");*/
-		String[] to = {"vinod.ambati94@gmail.com"};
-		String[] cc = {"vinod.ambati94@gmail.com" };
-		String[] bcc = {"vinod.ambati94@gmail.com"};
+		String[] to = {"xyz@gmail.com"};
+		String[] cc = {"xyz@gmail.com" };
+		String[] bcc = {"xyz@gmail.com"};
 		
 		zip=zip+"Automation.zip";
 		
